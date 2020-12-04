@@ -1,0 +1,5 @@
+#blok akses user ,kalo ada user yang buka folder app dan folder2 di dalamnya selama di di folder itu tidak ada file index maka jangan tampilkan isi folder nya
+
+Options -Indexes
+
+

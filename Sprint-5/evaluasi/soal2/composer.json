@@ -1,0 +1,8 @@
+{
+  "autoload":{
+    "psr-4":{
+      "Models\\":"SRC/App1/",
+      "View\\":"SRC/App2/"
+    }
+  }
+}

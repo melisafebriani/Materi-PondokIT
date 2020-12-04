@@ -1,0 +1,12 @@
+#file htaccess untuk memodifikasi konfigurasi dari server apache kita, bisa dilakukan per folder
+Options -Multiviews 
+
+#menulis ulang url yang ada di browser kita
+RewriteEngine On 
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.*)$ index.php?url=$1 [L] 
+
+
