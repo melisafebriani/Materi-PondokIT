@@ -1,7 +1,9 @@
 <?php
 
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
 
 
 /*
@@ -24,4 +26,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/message/{id}', 'HomeController@getMessage')->name('message');
-Route::post('message', 'HomeController@sendMessage');
+Route::post('/message', 'HomeController@sendMessage');
+
+
+Route::get('/edit/user', 'UserController@edit')->name('user.edit');
+Route::post('/edit/user', 'UserController@update')->name('user.update');
+
+Route::get('profile', 'UserController@profile');
+Route::post('profile', 'UserController@update_avatar');
+
