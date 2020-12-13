@@ -24,7 +24,7 @@ $factory->define(User::class, function (Faker $faker) {
         'avatar' => 'https://via.placeholder.com/150',
         'email' => $faker->unique()->safeEmail,
         'email_verified_at' => now(),
-        //'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi' ini crypt, // 123456...ini dri mna tau nya klw 1-6? dari video kayaknya...klw gk gini caranya, bikin baru lagi aj datanya, supaya enak masuk ke akun yg lain.iya mas, gawe lh,data apa?, user ini tadi ane mau login pkai id 2, passnya bkn 1-6, kn gk tau cryptnya ap, jadi bikin baru pakai car yg dibawah ini...jadi bcrypt itu dia merubah mencadi data yg hanya komputer yg bisa baca,tapi ktika kita mau isi password ttp 1-8, pham gk maksud ane..belummm...via wa? suara nya,  iyasnt, vn aja lh.oke 
+        //'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'// 123456
         'password' => bcrypt('12345678'),
         'remember_token' => Str::random(10),
     ];

@@ -11,14 +11,12 @@
         .user-wrapper, .message-wrapper {
             border: 0px solid #dddddd;
             overflow-y: auto;
-
-             
+       
         }
 
         .user-wrapper {
             height: 600px;
            
-    
         }
 
         .user {
@@ -34,7 +32,6 @@
         .user:last-child {
             margin-bottom: 0;
              
-
         }
 
         .pending {
